@@ -70,7 +70,7 @@ try:
     calc_jitter(ip_str)
 except ValueError:
     print('address/netmask is invalid: %s' % sys.argv[1])
-except:
+except IndexError:
     print('Usage : %s ip' % sys.argv[0])
 
 
